@@ -1,0 +1,3 @@
+rootProject.name = 'EasyMeasurements'
+
+include ':app'
