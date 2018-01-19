@@ -8,8 +8,8 @@
     "test": "jest"
   },
   "dependencies": {
-    "react": "16.0.0-alpha.6",
-    "react-native": "^0.52.0"
+    "react": "16.2.0",
+    "react-native": "0.52.0"
   },
   "devDependencies": {
     "babel-eslint": "^8.2.1",
