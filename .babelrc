@@ -1,8 +1,4 @@
 {
-  "plugins": [
-    "transform-class-properties",
-    "transform-react-native-style-optimizer"
-  ],
   "presets": [
     "flow",
     "react-native"
