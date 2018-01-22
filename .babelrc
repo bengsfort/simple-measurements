@@ -1,10 +1,11 @@
 {
-  "presets": [
-    "flow",
-    "react-native"
-  ],
+  "passPerPreset": true,
   "plugins": [
     "transform-class-properties",
     "transform-react-native-style-optimizer"
+  ],
+  "presets": [
+    "react-native",
+    "flow"
   ]
 }

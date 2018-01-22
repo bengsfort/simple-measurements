@@ -1,3 +1,3 @@
-rootProject.name = 'EasyMeasurements'
+rootProject.name = 'SimpleConversions'
 
 include ':app'
