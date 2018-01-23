@@ -39,7 +39,7 @@
 	<key>UIViewControllerBasedStatusBarAppearance</key>
 	<false/>
 	<key>NSLocationWhenInUseUsageDescription</key>
-	<string/>
+	<string></string>
 	<key>NSAppTransportSecurity</key>
 	<dict>
 		<key>NSExceptionDomains</key>
@@ -53,7 +53,6 @@
 	</dict>
 	<key>UIAppFonts</key>
 	<array>
-		<string>Glyphter.ttf</string>
 		<string>conversion-icons.ttf</string>
 	</array>
 </dict>
