@@ -7,6 +7,9 @@
     "lint": "./node_modules/.bin/eslint ./lib",
     "test": "jest"
   },
+  "rnpm": {
+    "assets": ["./static/fonts"]
+  },
   "dependencies": {
     "react": "16.2.0",
     "react-native": "0.52.1"
