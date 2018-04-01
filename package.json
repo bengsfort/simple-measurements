@@ -8,7 +8,9 @@
     "test": "jest"
   },
   "rnpm": {
-    "assets": ["./static/fonts"]
+    "assets": [
+      "./static/fonts"
+    ]
   },
   "dependencies": {
     "react": "16.2.0",
