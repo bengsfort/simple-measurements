@@ -61,6 +61,7 @@ export default class ConversionUnit extends Component {
     }
 
     this.setState(() => ({ animationActive: true }));
+    this.state.underlineScale.setValue(target > 0 ? 0 : 1);
     const animation = Animated.spring(this.state.underlineScale, {
       toValue: target,
       useNativeDriver: true,
@@ -68,6 +69,7 @@ export default class ConversionUnit extends Component {
     animation.start(({ finished }) => {
       if (finished) {
         this.setState(() => ({ animationActive: false }));
+        this.state.underlineScale.setValue(target);
       }
     });
     this.animationInstance = animation;
@@ -76,6 +78,7 @@ export default class ConversionUnit extends Component {
   getUnderlineScale() {
     const { underlineScale } = this.state;
     return {
+      opacity: underlineScale,
       transform: [{
         scaleX: underlineScale,
       }],
@@ -144,6 +147,8 @@ const styles = StyleSheet.create({
     fontSize: TEXT_SIZE,
   },
   underline: {
+    alignSelf: 'flex-end',
+    width: 320,
     height: 4,
     marginHorizontal: 16,
     backgroundColor: 'rgba(255, 255, 255, 0.2)',
