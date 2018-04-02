@@ -24,7 +24,7 @@ export default function MenuFooter() {
           style={[styles.content, styles.strong]}
           link="https://twitter.com/bengsfort"
           label="@bengsfort"
-        / >
+        />
       </View>
       <Text style={styles.content}>in Helsinki, Finland</Text>
     </View>

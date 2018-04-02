@@ -188,7 +188,6 @@ const styles = StyleSheet.create({
     flexDirection: 'column',
     justifyContent: 'flex-start',
     alignItems: 'stretch',
-    paddingTop: 32,
     backgroundColor: Colours.black[200],
   },
   underlay: {

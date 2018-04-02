@@ -38,6 +38,12 @@ export default class ConversionView extends Component {
     };
   }
 
+  componentDidUpdate(prevProps) {
+    if (prevProps.route.path !== this.props.route.path) {
+      this.reset();
+    }
+  }
+
   onPressValue = (value: 'x' | 'y'): void => {
     LayoutAnimation.configureNext(LayoutAnimation.Presets.easeInEaseOut);
     this.setState({

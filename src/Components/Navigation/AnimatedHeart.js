@@ -49,7 +49,7 @@ export default class AnimatedHeart extends Component {
         animationElapsed.setValue(0);
         setTimeout(() => {
           this.startAnimation();
-        }, 5 * 1000);
+        }, 2 * 1000);
       }
     });
 

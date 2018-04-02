@@ -24,9 +24,11 @@ const styles = StyleSheet.create({
   container: {
     justifyContent: 'center',
     alignItems: 'center',
-    paddingVertical: 12,
+    paddingTop: 44,
+    paddingBottom: 12,
+    backgroundColor: Colours.black[100],
     borderBottomWidth: StyleSheet.hairlineWidth,
-    borderBottomColor: Colours.black[600],
+    borderBottomColor: Colours.black[300],
     elevation: 5,
     zIndex: 5,
     shadowColor: Colours.black[200],
