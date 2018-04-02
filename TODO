@@ -1,4 +1,3 @@
-lib/Components/Navigation/MenuFooter.js:/** @todo: Add link to username, maybe make  heart wiggle a bit <3 */
-lib/Components/Navigation/MenuSectionItem.js:/** @todo: This needs be pimp-ified, it is WAY too boring right now. */
-lib/Utils/Colours.styles.js:/** @todo: Add rest of Material colors here (http://materializecss.com/color.html) */
 package.json:    "get-todos": "git grep @todo > TODO",
+src/Components/Navigation/MenuSectionItem.js:/** @todo: This needs be pimp-ified, it is WAY too boring right now. */
+src/Utils/Colours.styles.js:/** @todo: Add rest of Material colors here (http://materializecss.com/color.html) */
