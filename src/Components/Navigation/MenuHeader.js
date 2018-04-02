@@ -15,7 +15,7 @@ import Colours from 'ColoursStyle';
 export default function MenuHeader() {
   return (
     <View style={styles.container}>
-      <Text style={styles.title}>Simple Conversions</Text>
+      <Text style={styles.title}>Conversions</Text>
     </View>
   );
 }

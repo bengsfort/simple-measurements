@@ -11,6 +11,7 @@ import {
 } from 'react-native';
 import ColoursStyle from 'ColoursStyle';
 import AnimatedHeart from './AnimatedHeart';
+import ExternalLink from './ExternalLink';
 
 export default function MenuFooter() {
   return (
@@ -19,7 +20,11 @@ export default function MenuFooter() {
         <Text style={styles.content}>Made with </Text>
         <AnimatedHeart />
         <Text style={styles.content}> by </Text>
-        <Text style={[styles.content, styles.strong]}>@bengsfort</Text>
+        <ExternalLink
+          style={[styles.content, styles.strong]}
+          link="https://twitter.com/bengsfort"
+          label="@bengsfort"
+        / >
       </View>
       <Text style={styles.content}>in Helsinki, Finland</Text>
     </View>
@@ -31,7 +36,16 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center',
     height: 50,
+    elevation: 5,
+    zIndex: 5,
     backgroundColor: ColoursStyle.black[100],
+    shadowColor: ColoursStyle.black[200],
+    shadowOpacity: 1,
+    shadowRadius: 3,
+    shadowOffset: {
+      width: -4,
+      height: -4,
+    },
   },
   topRow: {
     flexDirection: 'row',
