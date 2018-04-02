@@ -93,10 +93,10 @@ export default class MenuButton extends Component {
           this.getAnimatedStyles(),
         ]}
       >
-        <View>
-          <View style={[styles.line, styles.line_first]} />
+        <View style={styles.lineContainer}>
+          <View style={[styles.line, styles.lineFirst]} />
           <View style={styles.line} />
-          <View style={[styles.line, styles.line_last]} />
+          <View style={[styles.line, styles.lineLast]} />
         </View>
       </AnimatedTouchable>
     );
@@ -108,8 +108,6 @@ const styles = StyleSheet.create({
     width: BUTTON_SIZE,
     height: BUTTON_SIZE,
     borderRadius: BUTTON_SIZE / 2,
-    justifyContent: 'center',
-    alignItems: 'center',
     backgroundColor: ColoursStyle.black[100],
     elevation: 2,
     shadowColor: 'black',
@@ -120,17 +118,22 @@ const styles = StyleSheet.create({
       height: 2,
     },
   },
+  lineContainer: {
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
   line: {
     width: 18,
     height: 3,
     backgroundColor: ColoursStyle.black[800],
   },
-  line_first: {
+  lineFirst: {
     transform: [{
       translateY: -4,
     }],
   },
-  line_last: {
+  lineLast: {
     transform: [{
       translateY: 4,
     }],
