@@ -10,15 +10,17 @@ import {
   StyleSheet,
 } from 'react-native';
 import ColoursStyle from 'ColoursStyle';
+import AnimatedHeart from './AnimatedHeart';
 
-/** @todo: Add link to username, maybe make  heart wiggle a bit <3 */
 export default function MenuFooter() {
   return (
     <View style={styles.container}>
-      <Text style={styles.content}>
-        Made with <Text style={styles.heart}>♥ </Text>
-        by <Text style={styles.strong}>@bengsfort</Text>
-      </Text>
+      {[
+      (<Text style={styles.content} key={0}>Made with </Text>),
+      (<AnimatedHeart key={1} />),
+      (<Text style={styles.content} key={2}> by </Text>),
+      (<Text style={[styles.content, styles.strong]} key={3}>@bengsfort</Text>),
+      ]}
       <Text style={styles.content}>in Helsinki, Finland</Text>
     </View>
   );
@@ -32,10 +34,8 @@ const styles = StyleSheet.create({
     backgroundColor: ColoursStyle.black[100],
   },
   content: {
+    fontSize: 14,
     color: ColoursStyle.black[700],
-  },
-  heart: {
-    color: ColoursStyle.red[500],
   },
   strong: {
     fontWeight: '800',
