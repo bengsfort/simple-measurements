@@ -189,6 +189,7 @@ const styles = StyleSheet.create({
     justifyContent: 'flex-start',
     alignItems: 'stretch',
     backgroundColor: Colours.black[200],
+    elevation: 2,
   },
   underlay: {
     backgroundColor: 'rgba(0, 0, 0, 0.6)',

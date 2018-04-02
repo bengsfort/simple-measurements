@@ -36,7 +36,7 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center',
     height: 50,
-    elevation: 5,
+    elevation: 3,
     zIndex: 5,
     backgroundColor: ColoursStyle.black[100],
     shadowColor: ColoursStyle.black[200],

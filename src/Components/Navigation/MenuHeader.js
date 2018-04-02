@@ -29,7 +29,7 @@ const styles = StyleSheet.create({
     backgroundColor: Colours.black[100],
     borderBottomWidth: StyleSheet.hairlineWidth,
     borderBottomColor: Colours.black[300],
-    elevation: 5,
+    elevation: 3,
     zIndex: 5,
     shadowColor: Colours.black[200],
     shadowOpacity: 1,
