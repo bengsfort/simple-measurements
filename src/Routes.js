@@ -9,6 +9,7 @@ import Colours from 'Colours';
 export const Categories = {
   temperature: 'Temperature',
   weight: 'Weight',
+  distance: 'Distance',
 };
 
 const routes: Array<RouteType> = [
@@ -23,7 +24,7 @@ const routes: Array<RouteType> = [
     calcY: y => y / 2.20462262185,
     labelY: 'kgs',
     placeholderY: '0.45',
-    theme: Colours.GREEN,
+    theme: Colours.green,
     category: Categories.weight,
   },
   {
@@ -38,8 +39,22 @@ const routes: Array<RouteType> = [
     calcY: y => ((y * 9) / 5) + 32,
     labelY: `${String.fromCharCode(176)}C`,
     placeholderY: '0',
-    theme: Colours.PURPLE,
+    theme: Colours.purple,
     category: Categories.temperature,
+  },
+  {
+    path: '/mile_to_kilo',
+    label: 'Miles / Kilometers',
+    // Mile
+    calcX: x => (x * 0.62137),
+    labelX: 'mi',
+    placeholderX: '60',
+    // Kilo
+    calcY: y => (y / 0.62137),
+    labelY: 'km',
+    placeholderY: '100',
+    theme: Colours.orange,
+    category: Categories.distance,
   },
 ];
 
